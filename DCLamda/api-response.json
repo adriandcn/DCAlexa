@@ -1,0 +1,22 @@
+	
+response	
+code	0
+message	
+0	
+customer_id	"3"
+number	"4118-7897-3609-5762"
+obfuscated	"4118-XXXX-XXXX-5762"
+brand	"Visa Titanium"
+alias	"Tarjeta de Crédito"
+available_quota	"3000.00"
+court_date	1
+next_payment_day	"01/16/2020"
+1	
+customer_id	"3"
+number	"3608-697175-5138"
+obfuscated	"3608-XXXXXX-5138"
+brand	"Diners Club"
+alias	"Tarjeta de Crédito"
+available_quota	"1500.00"
+court_date	24
+next_payment_day	"01/08/2020"
