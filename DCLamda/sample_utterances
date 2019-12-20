@@ -1,22 +1,26 @@
-RandomQuote random quotation
-RandomQuote give me a quote
-RandomQuote tell me a quote
-RandomQuote tell me a random quote
-AuthorQuote tell me a quotation from {author}
-AuthorQuote what did {author} say
-AuthorQuote I need a quote by {author}
-AuthorQuote get a quote of {author}
-AuthorQuote get a quote from {author}
-AuthorQuote get a quotation from {author}
-GetBookmarks tell me my bookmarked places
-GetBookmarks what are my bookmarked places
-GetBookmarks what are my saved places
-GetBookmarks tell me my favorite destinations
-GetBookmarks my saved destinations
-GetRoute how is the traffic
-GetRoute how far is {destination}
-GetRoute how much time will it take me to reach {destination}
-GetRoute how does the traffic look like for {destination}
-GetRoute the traffic time to {destination}
-GetRoute the route to {destination}
-GetRoute {destination}
+  "cual es el saldo de mi tarjeta {tarjeta}",
+                        "cuál es el saldo de mi tarjeta {tarjeta}",
+                        "fecha de corte de mi {tarjeta}",
+                        "fecha de corte de mi tarjeta {tarjeta}",
+                        "la fecha de corte de mi {tarjeta}",
+                        "el monto a pagar en mi {tarjeta}",
+                        "el monto a pagar en mi trajeta {tarjeta}",
+                        "la fecha de corte de mi tarjeta {tarjeta}",
+                        "cuanto debo pagar de mi tarjeta {tarjeta}",
+                        "cuanto debo pagar de mi {tarjeta}",
+                        "cuanto debo pagar en mi tarjeta {tarjeta}",
+                        "cuanto debo pagar en mi {tarjeta}",
+                        "cuanto tengo que pagar en mi {tarjeta}",
+                        "cuanto tengo que pagar en mi tarjeta {tarjeta}",
+                        "cual es el estado de mi {tarjeta}",
+                        "cuando es el corte de mi {tarjeta}",
+                        "cuando es el corte de mi tarjeta {tarjeta}",
+                        "corte de mi {tarjeta}",
+                        "corte de mi tarjeta {tarjeta}",
+                        "mi {tarjeta}",
+                        "la tarjeta {tarjeta}",
+                        "mi tarjeta {tarjeta}",
+                        "cuando es la fecha de corte de mi tarjeta {tarjeta}",
+                        "cuando es la fecha de corte de mi {tarjeta}",
+                        "dime el estado de mi {tarjeta}",
+                        "cuál es el estado de mi tarjeta {tarjeta}"
