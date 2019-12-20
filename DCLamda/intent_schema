@@ -1,40 +1,358 @@
 {
-  "intents": [
-    {
-      "intent": "RandomQuote"
-    },
-    {
-      "slots": [
-        {
-          "name": "author",
-          "type": "LIST_OF_AUTHORS"
-        }
-      ],
-      "intent": "AuthorQuote"
-    },
-    {
-      "intent": "GetBookmarks"
-    },
-    {
-      "intent": "GetRoute",
-      "slots": [
-        {
-          "name": "destination",
-          "type": "AMAZON.PostalAddress"
-        }
-      ]
-    },
-    {
-      "intent": "AMAZON.HelpIntent"
-    },
-    {
-      "intent": "AMAZON.YesIntent"
-    },
-    {
-      "intent": "AMAZON.NoIntent"
-    },
-    {
-      "intent": "AMAZON.FallbackIntent"
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "diners club",
+            "intents": [
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetRemoteDataIntent",
+                    "slots": [],
+                    "samples": [
+                        "cuales son las tarjetas a mi nombre",
+                        "todas mis tarjetas",
+                        "mis tarjetas disponibles",
+                        "las tarjetas que tengo",
+                        "mis tarjetas de crédito",
+                        "mis tarjetas",
+                        "Dime mis tarjetas",
+                        "Cuatas personas hay en el espacio",
+                        "Cuantas personas hay en el espacio ahora"
+                    ]
+                },
+                {
+                    "name": "RandomPromo",
+                    "slots": [],
+                    "samples": [
+                        "una promoción",
+                        "promoción",
+                        "promociones",
+                        "que promociones hay",
+                        "dame una promocion de diners club",
+                        "dime una promocion de diners",
+                        "dame una promoción",
+                        "Dime alguna promoción",
+                        "Dime una promoción",
+                        "Que promociones hay hoy"
+                    ]
+                },
+                {
+                    "name": "PromocionDiaria",
+                    "slots": [
+                        {
+                            "name": "dia",
+                            "type": "LIST_OF_DAYS"
+                        }
+                    ],
+                    "samples": [
+                        "que promociones hay los {dia}",
+                        "que promoción hay el {dia}",
+                        "cuales son las promociones del dia {dia}",
+                        "cuales son las promociones del {dia}",
+                        "dime promociones del {dia}",
+                        "dame promociones del {dia}",
+                        "promociones del {dia}",
+                        "dime la promoción del {dia}",
+                        "dame una promoción del {dia}"
+                    ]
+                },
+                {
+                    "name": "TarjetaEspecifica",
+                    "slots": [
+                        {
+                            "name": "tarjeta",
+                            "type": "LIST_OF_CARDS"
+                        }
+                    ],
+                    "samples": [
+                        "cual es el saldo de mi tarjeta {tarjeta}",
+                        "cuál es el saldo de mi tarjeta {tarjeta}",
+                        "fecha de corte de mi {tarjeta}",
+                        "fecha de corte de mi tarjeta {tarjeta}",
+                        "la fecha de corte de mi {tarjeta}",
+                        "el monto a pagar en mi {tarjeta}",
+                        "el monto a pagar en mi trajeta {tarjeta}",
+                        "la fecha de corte de mi tarjeta {tarjeta}",
+                        "cuanto debo pagar de mi tarjeta {tarjeta}",
+                        "cuanto debo pagar de mi {tarjeta}",
+                        "cuanto debo pagar en mi tarjeta {tarjeta}",
+                        "cuanto debo pagar en mi {tarjeta}",
+                        "cuanto tengo que pagar en mi {tarjeta}",
+                        "cuanto tengo que pagar en mi tarjeta {tarjeta}",
+                        "cual es el estado de mi {tarjeta}",
+                        "cuando es el corte de mi {tarjeta}",
+                        "cuando es el corte de mi tarjeta {tarjeta}",
+                        "corte de mi {tarjeta}",
+                        "corte de mi tarjeta {tarjeta}",
+                        "mi {tarjeta}",
+                        "la tarjeta {tarjeta}",
+                        "mi tarjeta {tarjeta}",
+                        "cuando es la fecha de corte de mi tarjeta {tarjeta}",
+                        "cuando es la fecha de corte de mi {tarjeta}",
+                        "dime el estado de mi {tarjeta}",
+                        "cuál es el estado de mi tarjeta {tarjeta}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MovimientosIntend",
+                    "slots": [
+                        {
+                            "name": "tarjeta",
+                            "type": "LIST_OF_CARDS"
+                        }
+                    ],
+                    "samples": [
+                        "los ultimos movimientos de mi tarjeta {tarjeta}",
+                        "los últimos movimientos de mi tarjeta {tarjeta}",
+                        "cuales son los movimientos de mi {tarjeta}",
+                        "cuales son los movimientos de mi tarjeta {tarjeta}",
+                        "los últimos movimientos de mi {tarjeta}",
+                        "los movimientos de mi {tarjeta}",
+                        "Dime los últimos movimientos de mi tarjeta {tarjeta}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": [
+                        "Diferir",
+                        "ok",
+                        "de una",
+                        "dale",
+                        "Si gracias",
+                        "Si porfavor",
+                        "Si"
+                    ]
+                },
+                {
+                    "name": "ModoTastyIntent",
+                    "slots": [],
+                    "samples": [
+                        "Que restaurantes hay en modo tasty",
+                        "Dime los restaurantes del modo Tasty"
+                    ]
+                },
+                {
+                    "name": "SalaVipIntent",
+                    "slots": [
+                        {
+                            "name": "aeropuerto",
+                            "type": "aeropuertos",
+                            "samples": [
+                                "mi vuelo es {aeropuerto}",
+                                "{aeropuerto}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "reserve una entrada a sala VIP del aeropuerto",
+                        "reserva a la sala VIP del aeropuerto",
+                        "una entrad a sala VIP del aeropuerto",
+                        "quiero entrar a sala VIP del aeropuerto",
+                        "reserve un puesto en sala VIP",
+                        "reserve una entrada en sala VIP",
+                        "Reservame una entrada a sala VIP"
+                    ]
+                },
+                {
+                    "name": "InversionesIntent",
+                    "slots": [
+                        {
+                            "name": "inversiones",
+                            "type": "tipo_inversiones",
+                            "samples": [
+                                "{inversiones}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "quiero abrir una inversión",
+                        "quiero hacer una inversión",
+                        "cuales son los requisitos para una inversión",
+                        "requisitos para una inversión"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "LIST_OF_DAYS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Viernes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Jueves"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Miercoles"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Martes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Lunes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LIST_OF_CARDS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Diners"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Visa"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "aeropuertos",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "internacional"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Nacional"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "tipo_inversiones",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Plan de inversión a largo plazo"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Plan ahorro Diners"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SalaVipIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "aeropuerto",
+                            "type": "aeropuertos",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.631825108133.69100969704",
+                                "elicitation": "Elicit.Slot.631825108133.69100969704"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "InversionesIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "inversiones",
+                            "type": "tipo_inversiones",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.327771307489.266606712142",
+                                "elicitation": "Elicit.Slot.327771307489.266606712142"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.631825108133",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Desea que envie la reserva de {aeropuerto} a su correo?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.631825108133.69100969704",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Su vuelo es nacional o internacional?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.631825108133.69100969704",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Entonces, se reservará un pase para la sala VIP {aeropuerto} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.327771307489.266606712142",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Diners Club maneja dos tipos de inversiones. El plan de ahorro Diners y las inversiones a plazo fijo. Cuál deseas abrir?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.327771307489.266606712142",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "{inversiones} es correcto?"
+                    }
+                ]
+            }
+        ]
     }
-  ]
 }
